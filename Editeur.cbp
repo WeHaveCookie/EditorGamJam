@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Editeur" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Editeur" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Editeur" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="..\..\..\..\Program Files\Soft\SFML-2.1\lib\libsfml-graphics.a" />
+					<Add library="..\..\..\..\Program Files\Soft\SFML-2.1\lib\libsfml-window.a" />
+					<Add library="..\..\..\..\Program Files\Soft\SFML-2.1\lib\libsfml-system.a" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="G:/Program Files/Soft/SFML-2.1/include" />
+		</Compiler>
+		<Linker>
+			<Add library="sfml-graphics" />
+			<Add library="sfml-window" />
+			<Add library="sfml-system" />
+			<Add directory="G:/Program Files/Soft/SFML-2.1/lib" />
+		</Linker>
+		<Unit filename="DrawableObject.cpp" />
+		<Unit filename="DrawableObject.h" />
+		<Unit filename="Level.cpp" />
+		<Unit filename="Level.hpp" />
+		<Unit filename="QuadTree.cpp" />
+		<Unit filename="QuadTree.hpp" />
+		<Unit filename="Reader.cpp" />
+		<Unit filename="Reader.h" />
+		<Unit filename="constantes.hpp" />
+		<Unit filename="edit.cpp" />
+		<Unit filename="edit.hpp" />
+		<Unit filename="main.cpp" />
+		<Unit filename="map.cpp" />
+		<Unit filename="map.hpp" />
+		<Unit filename="mapDisplay.cpp" />
+		<Unit filename="mapDisplay.hpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
